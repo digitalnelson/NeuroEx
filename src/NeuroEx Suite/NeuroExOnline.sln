@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroExOnline", "NeuroExOnline\NeuroExOnline.csproj", "{57FA59DC-95E7-4FE5-95A2-AEA5F251A4FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroExOnline.Web", "NeuroExOnline.Web\NeuroExOnline.Web.csproj", "{D46CBAD8-EBD1-4C63-84E2-B287E9696429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57FA59DC-95E7-4FE5-95A2-AEA5F251A4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FA59DC-95E7-4FE5-95A2-AEA5F251A4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FA59DC-95E7-4FE5-95A2-AEA5F251A4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FA59DC-95E7-4FE5-95A2-AEA5F251A4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46CBAD8-EBD1-4C63-84E2-B287E9696429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46CBAD8-EBD1-4C63-84E2-B287E9696429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46CBAD8-EBD1-4C63-84E2-B287E9696429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46CBAD8-EBD1-4C63-84E2-B287E9696429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

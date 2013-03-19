@@ -1,0 +1,70 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="NeuroEx.WPF.Tasks.BalanceView"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.35*"/>
+			<RowDefinition Height="0.35*"/>
+			<RowDefinition Height="0.30*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.65*"/>
+			<ColumnDefinition Width="0.35*"/>
+		</Grid.ColumnDefinitions>
+		<Grid d:LayoutOverrides="Height" Grid.RowSpan="2" Margin="0,0,2,2">
+			<Grid.RowDefinitions>
+				<RowDefinition  Height="Auto"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Center of Balance" Foreground="{DynamicResource PanelTitle}" VerticalAlignment="Center"/>
+			<Canvas Background="#FF2D2D2D" Grid.Row="1"/>
+		</Grid>
+		<Grid Grid.Column="1" Margin="2,0,0,2">
+			<Grid.RowDefinitions>
+				<RowDefinition  Height="Auto"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Speed" Foreground="{DynamicResource PanelTitle}" VerticalAlignment="Center"/>
+			<Canvas Background="#FF2D2D2D" Grid.Row="1"/>
+		</Grid>
+		<Grid Grid.Column="1" Grid.Row="1" Margin="2,2,0,2">
+			<Grid.RowDefinitions>
+				<RowDefinition  Height="Auto"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Distance" Foreground="{DynamicResource PanelTitle}" VerticalAlignment="Center"/>
+			<Canvas Background="#FF2D2D2D" Grid.Row="1"/>
+		</Grid>
+		<Grid Grid.Row="2"  Height="Auto">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="20"/>
+				<RowDefinition Height="0.869*"/>
+			</Grid.RowDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Device Info" Foreground="{DynamicResource PanelTitle}" d:LayoutOverrides="Height" VerticalAlignment="Center"/>
+			<Border BorderThickness="1" Grid.Row="1">
+				<Grid Background="#FF101010"/>
+			</Border>
+		</Grid>
+		<Grid Grid.Column="1" d:LayoutOverrides="HorizontalAlignment" Grid.Row="2" Margin="2,2,0,0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="20"/>
+				<RowDefinition Height="0.4*"/>
+				<RowDefinition Height="20"/>
+				<RowDefinition Height="0.2*"/>
+			</Grid.RowDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Age Norms" Foreground="{DynamicResource PanelTitle}" d:LayoutOverrides="Height" VerticalAlignment="Center"/>
+			<Canvas Background="#FF2D2D2D" Grid.Row="1"/>
+			<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" d:LayoutOverrides="Height" Text="Weight" Grid.Row="2" Foreground="{DynamicResource PanelTitle}" VerticalAlignment="Center"/>
+			<Grid Grid.Row="3" Background="#FF2D2D2D">
+				<TextBlock TextWrapping="Wrap" Text="70kg" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26.667" FontWeight="Bold" Foreground="{DynamicResource PanelTitle}"/>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl>

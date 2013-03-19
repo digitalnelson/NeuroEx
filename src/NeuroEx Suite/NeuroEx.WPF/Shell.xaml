@@ -1,0 +1,39 @@
+﻿<Window x:Class="NeuroEx.WPF.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+		xmlns:Microsoft_CSharp_RuntimeBinder="clr-namespace:Microsoft.CSharp.RuntimeBinder;assembly=Microsoft.CSharp" 
+		xmlns:cal="http://www.codeplex.com/CompositeWPF"
+		xmlns:nes="clr-namespace:NeuroEx.WPF"
+		xmlns:nesv="clr-namespace:NeuroEx.WPF.Views"
+		mc:Ignorable="d" 
+        Title="NeuroEx Suite" Height="768" Width="1024" Background="Black">
+	<Window.Resources>
+		
+	</Window.Resources>
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="50"/>
+    		<RowDefinition/>
+    	</Grid.RowDefinitions>
+		<Grid Margin="0,3,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.434*"/>
+				<ColumnDefinition Width="0.566*"/>
+			</Grid.ColumnDefinitions>
+    		<Image HorizontalAlignment="Left" Margin="5,2,0,-3" Source="Content/Brain69x48.png" Stretch="Fill" Width="69"/>
+    		<TextBlock TextWrapping="Wrap" Text="NeuroEx Suite" VerticalAlignment="Center" Foreground="{DynamicResource PanelTitle}" FontSize="37.333" FontFamily="Trajan Pro" FontWeight="Bold" d:LayoutOverrides="Width" Grid.ColumnSpan="2" Margin="75,2,5,0"/>
+    		<UniformGrid Grid.Column="1" Columns="5" Rows="1" HorizontalAlignment="Right" Margin="0,2,4,0">
+				<Button Content="Dashboard" Command="{Binding DashboardCommand}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Template="{DynamicResource GlassButton}" Style="{DynamicResource TopLevelButtonStyle}" Foreground="{DynamicResource PanelTitle}" Height="27" Width="85" FontSize="13.333"/>
+    			<Button Content="Cohort" Command="{Binding EditPeopleCommand}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Style="{DynamicResource TopLevelButtonStyle}" Template="{DynamicResource GlassButton}" Foreground="{DynamicResource PanelTitle}" Height="27" Width="85" FontSize="13.333"/>
+    			<Button Content="Measures" Command="{Binding RunTasksCommand}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Template="{DynamicResource GlassButton}" Style="{DynamicResource TopLevelButtonStyle}" Foreground="{DynamicResource PanelTitle}" Height="27" Width="85" FontSize="13.333"/>
+    			<Button Content="Devices" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Style="{DynamicResource TopLevelButtonStyle}" Template="{DynamicResource GlassButton}" Foreground="{DynamicResource PanelTitle}" Height="27" Width="85" FontSize="13.333"/>
+    			<Button Content="Settings" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Style="{DynamicResource TopLevelButtonStyle}" Template="{DynamicResource GlassButton}" Foreground="{DynamicResource PanelTitle}" Height="27" Width="85" FontSize="13.333"/>
+    		</UniformGrid>
+    		<Path Data="M51,44 L776.5,44" Height="3" Margin="50,0,4,1" Stretch="Fill" Stroke="#7EFFFFFF" VerticalAlignment="Bottom" Grid.ColumnSpan="2" StrokeThickness="2"/>
+    	</Grid>
+		<Grid Grid.Row="1" >
+			<ContentControl cal:RegionManager.RegionName="{x:Static nes:RegionNames.MainManagerRegion}" />
+		</Grid>
+	</Grid>
+</Window>
